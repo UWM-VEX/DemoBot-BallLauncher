@@ -23,9 +23,13 @@
 #ifndef MAIN_H_
 
 // This prevents multiple inclusion, which isn't bad for this file but is good practice
-#define MAIN_H_
-
+#define MAIN_H
 #include <API.h>
+#include "OI.h"
+#include "PantherMotor.h"
+#include "Drive.h"
+#include "Utilities.h"
+
 
 // Allow usage of this file in C++ programs
 #ifdef __cplusplus

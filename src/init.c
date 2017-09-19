@@ -11,6 +11,7 @@
  */
 
 #include "main.h"
+#include "drive.h"
 
 /*
  * Runs pre-initialization code. This function will be started in kernel mode one time while the
@@ -37,7 +38,7 @@ void initializeIO() {
  * can be implemented in this task if desired.
  */
 void initialize() {
-  robotDrive = initDrive(initPantherMotor(2,0), initPantherMotor(5,1),
-					initPantherMotor(3,0), initPantherMotor(6,1),
-					encoderInit(1, 2, 1), encoderInit(3,4,0), gyroInit(1, 0));
+Drive robotDrive;
+robotDrive = initDrive(initPantherMotor(9,0), initPantherMotor(8,0), initPantherMotor(3,0), initPantherMotor(4,0));
+
 }

@@ -31,6 +31,7 @@
  */
 void operatorControl() {
 	while (1) {
+		Drive robotDrive;
 		tankDrive(robotDrive, OIGetDriveLeft(), OIGetDriveRight());
 		delay(20);
 	}
