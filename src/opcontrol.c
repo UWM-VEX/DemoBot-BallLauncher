@@ -30,8 +30,9 @@
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
 void operatorControl() {
+	robotDrive = initDrive(initPantherMotor(8,1), initPantherMotor(9,0),
+		initPantherMotor(6,1), initPantherMotor(7,0));
 	while (1) {
-		Drive robotDrive;
 		tankDrive(robotDrive, OIGetDriveLeft(), OIGetDriveRight());
 		delay(20);
 	}

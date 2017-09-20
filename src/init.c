@@ -37,8 +37,6 @@ void initializeIO() {
  * will not start. An autonomous mode selection menu like the pre_auton() in other environments
  * can be implemented in this task if desired.
  */
-void initialize() {
-Drive robotDrive;
-robotDrive = initDrive(initPantherMotor(9,0), initPantherMotor(8,0), initPantherMotor(3,0), initPantherMotor(4,0));
 
+void initialize() {
 }
