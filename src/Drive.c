@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Initializes a new drive object composed of six PantherMotors, two encoders and a gyro.
+ * Initializes a new drive object composed of four PantherMotors
  */
 Drive initDrive(PantherMotor frontLeftMotor, PantherMotor frontRightMotor,
 		PantherMotor rearLeftMotor, PantherMotor rearRightMotor)

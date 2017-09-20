@@ -26,4 +26,6 @@ Drive initDrive(PantherMotor frontLeftMotor, PantherMotor frontRightMotor,
 void tankDrive(Drive drive, int magnitude, int rotation);
 void arcadeDrive(Drive drive, int magnitude, int rotation);
 
+Drive robotDrive;
+
 #endif /* DRIVE_H_ */
